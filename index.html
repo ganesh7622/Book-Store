@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div class="navbar">
+        <h1>📚 Booksky</h1>
+    </div>
+    <div class="container">
+<div class="book-container">
+        <h2>Pirates of the caribbean</h2><br>
+        <h2>Johny Depp</h2><br>
+        <p>Captain Jack Sparrow is one of the most iconic pirates of the seas, known for his witty humor, clever tricks, and unpredictable personality. He may not always look like a traditional hero</p><br>
+         <button onclick="change(event)" class="delete-btn">Delete</button> 
+    </div>
+    </div>
+    
+     <div class="overlay"></div>
+    <div class="popup">
+        <h2>Add Book</h2>
+          <form>
+            <input type="text" placeholder="Add Book" id="add-book-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea id="book-description" placeholder="Book Description"></textarea >
+            <button id="add-book-input" onclick="getcontainer(event)" class="add-book">Add</button>
+            <button id="cancel-popup-input" onclick="def(event)" class="cancel-popup">Cancel</button>
+          </form>
+    </div>
+    <div class="icon">
+        <button id="add-popup">+</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
