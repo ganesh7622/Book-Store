@@ -70,7 +70,11 @@ body {
   font-size: 0.95rem;
   margin-bottom: 10px;
   color: #f2f2f2;
+  word-wrap: break-word;      /* Allows long words to wrap */
+  overflow-wrap: break-word;  /* Modern version for wrapping */
+  white-space: normal;        /* Ensures normal line wrapping */
 }
+
 
 .delete-btn {
   background: rgb(255, 80, 80);
@@ -189,3 +193,4 @@ body {
     width: 85%;
   }
 }
+
